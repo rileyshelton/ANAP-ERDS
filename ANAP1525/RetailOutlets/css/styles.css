@@ -1,0 +1,186 @@
+/* montserrat-300 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  display: block;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'),
+      url('../fonts/Montserrat/montserrat-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/Montserrat/montserrat-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+      url('../fonts/Montserrat/montserrat-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/Montserrat/montserrat-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+      url('../fonts/Montserrat/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/Montserrat/montserrat-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+      url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body{
+  font-family: "Montserrat";
+}
+
+
+.list{
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.list li{
+  background: #ccc;
+  margin-right: 1.25rem;
+  padding: 0.4rem;
+  border: 1px solid #999;
+  border-radius: 10px;
+}
+
+#line{
+  width: 100vw;
+  background: #999;
+  padding: 1px 0;
+  margin: 0.5rem 0 1rem;
+}
+
+.site-main h1{
+  color: #999;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+/*
+.retail-outlets-form div{
+  border: 1px solid black;
+}*/
+
+.retail-outlets-form{
+  padding: 0 1.5rem;
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  /*grid-template-areas: 
+  "id name name"
+  "contact contact email"
+  "add1 add1 add1"
+  "add2 add2 add2"
+  "city prov country"
+  "postcod postcod postcod"
+  "phone fax status"
+  "submit submitB submit";*/
+}
+
+.retail-outlets-form label{
+  color: #999;
+  margin-bottom: 0.25rem;
+}
+
+.retail-outlets-form input{
+  border: 1px solid #999;
+}
+
+.retail-outlets-form input,
+.retail-outlets-form label
+{  
+  font-family: "Montserrat";
+  background: #fff;
+  width: 100%;
+  line-height: 1.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.retail-outlets-form .retail-id{
+  grid-column: 1;
+}
+
+.retail-outlets-form .retail-name{
+  grid-column: 2/4;
+}
+
+.retail-outlets-form .contact-name{
+  grid-column: 1/3;
+}
+
+.retail-outlets-form .email{
+  grid-column: 3;
+}
+
+.retail-outlets-form .address-1{
+  grid-column: 1/4;
+}
+
+.retail-outlets-form .address-2{
+  grid-column: 1/4;
+}
+
+.retail-outlets-form .city{
+  grid-column: 1/3;
+}
+
+.retail-outlets-form .postal-code{
+  grid-column: 2/4;
+}
+
+.retail-outlets-form .phone-num{
+  grid-column: 1;
+}
+
+.retail-outlets-form .submit{
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.submit button{
+  background: #999;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+/*
+.retail-outlets-form .province,
+.retail-outlets-form .country,
+.retail-outlets-form .status{
+  display: flex;
+  flex-flow: row;
+  padding: 1rem 0;
+}
+*/
+.province select,
+.country select,
+.status select{
+  width: 100%;
+  height: 2.1rem;
+  border: 1px solid #999;
+}
+
